@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  ride_id: 1
+  description: MyString
+  imagefile: MyString
+
+two:
+  id: 1
+  ride_id: 1
+  description: MyString
+  imagefile: MyString

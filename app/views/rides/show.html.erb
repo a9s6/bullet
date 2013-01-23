@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @ride.id %>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <%= @ride.photo_id %>
+</p>
+
+<p>
+  <b>Rider:</b>
+  <%= @ride.rider_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @ride.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @ride.description %>
+</p>
+
+<p>
+  <b>Start:</b>
+  <%= @ride.start %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%= @ride.end %>
+</p>
+
+<p>
+  <b>Mainmapfile:</b>
+  <%= @ride.mainmapfile %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%= @ride.details %>
+</p>
+
+
+<%= link_to 'Edit', edit_ride_path(@ride) %> |
+<%= link_to 'Back', rides_path %>

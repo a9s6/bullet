@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  photo_id: 1
+  rider_id: 1
+  name: MyString
+  description: MyString
+  start: 2013-01-24 03:06:14
+  end: 2013-01-24 03:06:14
+  mainmapfile: MyString
+  details: MyText
+
+two:
+  id: 1
+  photo_id: 1
+  rider_id: 1
+  name: MyString
+  description: MyString
+  start: 2013-01-24 03:06:14
+  end: 2013-01-24 03:06:14
+  mainmapfile: MyString
+  details: MyText

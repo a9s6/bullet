@@ -1,0 +1,41 @@
+<%= form_for(@rider) do |f| %>
+  <% if @rider.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rider.errors.count, "error") %> prohibited this rider from being saved:</h2>
+
+      <ul>
+      <% @rider.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :about %><br />
+    <%= f.text_area :about %>
+  </div>
+  <div class="field">
+    <%= f.label :bikedetails %><br />
+    <%= f.text_field :bikedetails %>
+  </div>
+  <div class="field">
+    <%= f.label :photofile %><br />
+    <%= f.text_field :photofile %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

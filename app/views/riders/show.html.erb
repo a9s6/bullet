@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @rider.id %>
+</p>
+
+<p>
+  <b>Firstname:</b>
+  <%= @rider.firstname %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @rider.lastname %>
+</p>
+
+<p>
+  <b>About:</b>
+  <%= @rider.about %>
+</p>
+
+<p>
+  <b>Bikedetails:</b>
+  <%= @rider.bikedetails %>
+</p>
+
+<p>
+  <b>Photofile:</b>
+  <%= @rider.photofile %>
+</p>
+
+
+<%= link_to 'Edit', edit_rider_path(@rider) %> |
+<%= link_to 'Back', riders_path %>
