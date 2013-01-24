@@ -2,8 +2,7 @@ class CreateRides < ActiveRecord::Migration
   def change
     create_table :rides do |t|
       t.integer :id
-      t.integer :photo_id
-      t.integer :rider_id
+      t.integer :poster_photo_id
       t.string :name
       t.string :description
       t.datetime :start

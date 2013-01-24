@@ -5,3 +5,16 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
+
+riders = Rider.create([
+  { :firstname => 'Abhimanyu', :lastname => 'Sirohi', :about => 'Dhurandar number 1', :bikedetails => 'Royal Enfield Desert Storm. 500cc', :photofile => 'abhi.jpg'}, 
+  { :firstname => 'Nitin', :lastname => 'Bourai', :about => 'Dhurandar number 2', :bikedetails => 'Royal Enfield Electra 5S. 350cc', :photofile => 'nitin.jpg'},
+  ])
+
+rides = Ride.create([
+  { :poster_photo_id => 1, :name => 'Royal Rajasthan Oct 2012', :description => 'A 2700 Kms long journey across the desert state.', :start => DateTime.new(2012, 10, 20), :end => DateTime.new(2012, 10, 28), :mainmapfile => 'rajasthan_map.png', :details => 'Some details' }
+])
+
+photos = Photo.create([
+  { :ride_id => 1, :description => 'Royal Rajasthan Ride Poster', :imagefile => 'rajasthan_poster.png'}
+])
