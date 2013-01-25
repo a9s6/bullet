@@ -1,45 +1,14 @@
-<p id="notice"><%= notice %></p>
+<div style="margin-left: 50px; margin-right: 50px;">
+	<center>
+		<h2><%= @ride.name %></h2>
+		<p style="width: 800px"><%= @ride.description %></p>
+		<%= image_tag(@ride.posterfile)%>
+		<br/>
+		<p>Trip Duration: <%= (@ride.end-@ride.start) %>, From <%= @ride.start%></p>
+		<br/>
+		<p><%= @ride.details%></p>
+	</center>
+	
+	<%= link_to 'Back', rides_path %>	
+</div>
 
-<p>
-  <b>Id:</b>
-  <%= @ride.id %>
-</p>
-
-<p>
-  <b>Photo:</b>
-  <%= @ride.poster_photo_id %>
-</p>
-
-<p>
-  <b>Name:</b>
-  <%= @ride.name %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @ride.description %>
-</p>
-
-<p>
-  <b>Start:</b>
-  <%= @ride.start %>
-</p>
-
-<p>
-  <b>End:</b>
-  <%= @ride.end %>
-</p>
-
-<p>
-  <b>Mainmapfile:</b>
-  <%= @ride.mainmapfile %>
-</p>
-
-<p>
-  <b>Details:</b>
-  <%= @ride.details %>
-</p>
-
-
-<%= link_to 'Edit', edit_ride_path(@ride) %> |
-<%= link_to 'Back', rides_path %>

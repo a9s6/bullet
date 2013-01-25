@@ -38,15 +38,15 @@ ActiveRecord::Schema.define(:version => 20130123213939) do
   end
 
   create_table "rides", :force => true do |t|
-    t.integer  "poster_photo_id"
+    t.string   "posterfile"
     t.string   "name"
     t.string   "description"
     t.datetime "start"
     t.datetime "end"
     t.string   "mainmapfile"
     t.text     "details"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end

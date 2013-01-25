@@ -1,11 +1,12 @@
 <h1 align="center">Rides</h1>
 <br/><br/>
+
 <div class="clearfix" style="margin: 0px 100px 100px 100px">
 	<% @rides.each do |ride| %>
 		<a href="rides/<%= ride.id %>">
-		<div class="tile triple triple-vertical bg-color-white border-color-blueLight">
-	        <div class="tile-content fg-color-blue">
-	        	<center><%= image_tag(ride.mainmapfile, :size => '375x280') %></center>
+		<div class="tile triple triple-vertical bg-color-orange" style="margin-left: 5%;">
+	        <div class="tile-content">
+	        	<center><%= image_tag(ride.posterfile, :size => '400x190') %></center>
 	        	<br/>
 				<center><h3><%= ride.name %></h3>
 				<hr/>

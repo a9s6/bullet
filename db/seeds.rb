@@ -12,7 +12,8 @@ riders = Rider.create([
   ])
 
 rides = Ride.create([
-  { :poster_photo_id => 1, :name => 'Royal Rajasthan Oct 2012', :description => 'A 2700 Kms long journey across the desert state.', :start => DateTime.new(2012, 10, 20), :end => DateTime.new(2012, 10, 28), :mainmapfile => 'rajasthan_map.png', :details => 'Some details' }
+  { :posterfile => 'rajasthan-poster.png', :name => 'Royal Rajasthan Oct 2012', :description => 'A 2700 Kms long journey across the desert state.', :start => DateTime.new(2012, 10, 20), :end => DateTime.new(2012, 10, 28), :mainmapfile => 'rajasthan_map.png', :details => 'Some details' },
+  { :posterfile => 'agraexp-poster.png', :name => 'Yamuna Expressway Nov 2012', :description => 'A short 205 Kms trip along the newly built, almost 8-laned Yamuna Expressway (formerly Taj Expressway) that connects Greater Noida with Agra.', :start => DateTime.new(2012, 11, 26), :end => DateTime.new(2012, 11, 26), :mainmapfile => 'yamuna_map.png', :details => 'Some details' }
 ])
 
 photos = Photo.create([

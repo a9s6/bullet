@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bullet</title>
+  <title>Royal Enfield Rides</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 
 <body style="margin: 20px 20px 20px 20px;">
-	<table>
-		<tbody>
-			<tr>
-				<td width="100%">
-					<div class="nav-bar bg-color-white">
-						<div class="nav-bar-inner">
-							<span class="element"><%= link_to 'Home', { :controller => 'static', :action => 'index'} %></span>
+	<div class="nav-bar bg-color-white">
+		<div class="nav-bar-inner">
+			<span class="element"><%= link_to 'Home', { :controller => 'static', :action => 'index'} %></span>
 
-					        <span class="divider"></span>
-					        <span class="element"><%= link_to 'Rides', { :controller => 'rides', :action => 'index'} %></span>
-														
-					        <span class="divider"></span>
-					        <span class="element"><%= link_to 'Riders', { :controller => 'riders', :action => 'index'} %></span>
+	        <span class="divider"></span>
+	        <span class="element"><%= link_to 'Rides', { :controller => 'rides', :action => 'index'} %></span>
+										
+	        <span class="divider"></span>
+	        <span class="element"><%= link_to 'Riders', { :controller => 'riders', :action => 'index'} %></span>
 
-					        <span class="divider"></span>
-					        <span class="element"><%= link_to 'Location', { :controller => 'static', :action => 'location'} %></span>
-					        
-					        <span class="divider"></span>
-					        <span class="element"><%= link_to 'Survival Guide', { :controller => 'static', :action => 'guide'} %></span>
+	        <span class="divider"></span>
+	        <span class="element"><%= link_to 'Location', { :controller => 'static', :action => 'location'} %></span>
+	        
+	        <span class="divider"></span>
+	        <span class="element"><%= link_to 'Survival Guide', { :controller => 'static', :action => 'guide'} %></span>
 
-				        </div>
-					</div>					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-
+        </div>
+	</div>
+	<hr/>					
 <%= yield %>
 
+	<br/><br/>
+	<div>
+		<center>...</center>
+	</div>
 </body>
 </html>
